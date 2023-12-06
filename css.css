@@ -1,0 +1,90 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('https://images3.alphacoders.com/196/196797.jpg');
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+#calendar {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 45px;
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+.calendar-day {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background-image: linear-gradient(white, rgb(12, 12, 118), rgb(0, 0, 255));
+    border: 1px solid black;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 100px;
+    color: white;
+}
+
+.calendar-day:hover {
+    background-color: #e0e0e0;
+}
+
+#thanks-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-image: url('https://cdn.wallpapersafari.com/20/44/yUqfPn.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px; /* Zaokrąglenie rogów */
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.close-button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#snow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.snowflake {
+    position: absolute;
+    background: #fff;
+    border-radius: 50%;
+    pointer-events: none;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+    }
+}
