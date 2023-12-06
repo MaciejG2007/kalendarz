@@ -6,10 +6,15 @@ body {
     padding: 0;
 }
 
+#calendar-container {
+    overflow-y: auto;
+    max-height: 80vh; /* Dostosuj wysokość do własnych preferencji */
+}
+
 #calendar {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
-    gap: 45px;
+    gap: 15px; /* Zmniejsz odstęp między dniami */
     max-width: 600px;
     margin: 50px auto;
 }
