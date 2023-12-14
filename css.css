@@ -8,13 +8,13 @@ body {
 
 #calendar-container {
     overflow-y: auto;
-    max-height: 80vh; /* Dostosuj wysokość do własnych preferencji */
+    max-height: 80vh;
 }
 
 #calendar {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
-    gap: 15px; /* Zmniejsz odstęp między dniami */
+    gap: 15px;
     max-width: 600px;
     margin: 50px auto;
 }
@@ -51,7 +51,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 20px; /* Zaokrąglenie rogów */
+    border-radius: 20px;
     padding: 20px;
     text-align: center;
     color: white;
